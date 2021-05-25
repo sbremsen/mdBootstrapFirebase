@@ -1,9 +1,9 @@
 .nav-link.active {
-  background-color: #eee;
+  background-color: #3f51b5;
 }
 
 .logout-button {
-  display: none;
+ // display: none;
 }
 
 .avatar-dropdown {
@@ -18,4 +18,8 @@
   .logout-button {
     display: block;
   }
+}
+
+.navLinks {
+  font-weight: 600;
 }

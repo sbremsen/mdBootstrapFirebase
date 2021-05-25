@@ -1,74 +1,78 @@
 <div class="container py-5">
   <div class="row">
     <div class="col-md-6">
-      <mdb-card class="animated fadeIn mb-3" borderColor="border-warning">
-        <mdb-card-header>App section</mdb-card-header>
-        <mdb-card-body class="p-3">
-          <mdb-card-title>
-            <h5 class="mb-3">Projects</h5>
-          </mdb-card-title>
-          <mdb-card-text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi blanditiis, assumenda dolorem
-            possimus id qui ut eaque. Similique porro labore commodi impedit deserunt? Officiis nihil rem aut molestias
-            illum eos! Similique accusantium reprehenderit necessitatibus quo totam provident laudantium recusandae
-            sapiente, nemo ex illum nobis, officia, vero dolores! Distinctio similique pariatur, at sint nemo quidem
-            commodi vel rerum aliquid quibusdam? Perferendis.</mdb-card-text>
-          <a routerLink="/projects" mdbBtn color="orange">Go to section</a>
-        </mdb-card-body>
-      </mdb-card>
+      <div class="col-md-12">
+        <!--Card-->
+        <mdb-card cascade="true" wider="true" class="animated bounceIn mb-3" borderColor="border-info">
+
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="https://mdbcdn.b-cdn.net/img/Photos/Others/photo6.jpg"></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--/Card image-->
+
+          <mdb-card-body cascade="true" class="text-center">
+            <!--Card content-->
+            <!--Title-->
+            <h4 class="card-title">
+              <strong>Scott Remsen</strong>
+            </h4>
+            <h5 class="indigo-text">
+              <strong>Web Designer</strong>
+            </h5>
+
+            <mdb-card-text>
+              Known in some circles as "Purveyor of Good Vibes"...a title that must be taken humbly, with lots of love and grace!  This site is hosted on Google Firebase, using Angular 11, NGRX, and NoSQL Firebase Realtime Database.
+            </mdb-card-text>
+
+            <!--Linkedin-->
+            <a class="px-2 icons-sm li-ic">
+              <mdb-icon fab icon="linkedin-in"> </mdb-icon>
+            </a>
+            <!--Twitter-->
+            <a class="px-2 icons-sm tw-ic">
+              <mdb-icon fab icon="twitter"> </mdb-icon>
+            </a>
+            <!--Dribbble-->
+            <a class="px-2 icons-sm fb-ic">
+              <mdb-icon fab icon="facebook-f"> </mdb-icon>
+            </a>
+
+          </mdb-card-body>
+          <!--/.Card content-->
+
+        </mdb-card>
+        <!--/.Card-->
+      </div>
     </div>
 
     <div class="col-md-6">
-      <mdb-card class="animated fadeIn mb-3" borderColor="border-warning">
-        <mdb-card-header>App section</mdb-card-header>
+      <mdb-card class="animated slideInRight mb-3" borderColor="border-info">
+        <mdb-card-header>Welcome to a Sonic Playground</mdb-card-header>
         <mdb-card-body class="p-3">
           <mdb-card-title>
-            <h5 class="mb-3">Tables</h5>
+            <h5 class="mb-3">Live Music , Studio Recordings, Video Relics!</h5>
           </mdb-card-title>
-          <mdb-card-text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi blanditiis, assumenda dolorem
-            possimus id qui ut eaque. Similique porro labore commodi impedit deserunt? Officiis nihil rem aut molestias
-            illum eos! Similique accusantium reprehenderit necessitatibus quo totam provident laudantium recusandae
-            sapiente, nemo ex illum nobis, officia, vero dolores! Distinctio similique pariatur, at sint nemo quidem
-            commodi vel rerum aliquid quibusdam? Perferendis.</mdb-card-text>
-          <a routerLink="/customers" mdbBtn color="orange">Go to section</a>
+          <mdb-card-text>
+            <p>Thank you for visiting my website.  Please check out the audio music files and YouTube videos
+            on this website.  If you like this website and would like to use a site like this, to be customized, just let me know.
+            This site is 100% FREE, hosted on Google's Cloud Platform, a.k.a. Firebase.  This site uses a No-SQL Firebase Database
+            and is build using Angular for front-end web design.
+          </p>
+          <p>
+            Enough tech talk!  Please browse my <a [routerLink]="['/landing-page']" routerLinkActive="router-link-active">Music</a> page to hear Chi Club original studio recordings!
+          </p>
+          <p>
+            This site is Under Construction.  Thank you for visiting!
+          </p>
+          </mdb-card-text>
+          <a routerLink="/landing-page" mdbBtn color="orange">Go to music</a>
         </mdb-card-body>
       </mdb-card>
     </div>
   </div>
-  <div class="row">
 
-    <div class="col-md-6">
-      <mdb-card class="animated fadeIn mb-3" borderColor="border-warning">
-        <mdb-card-header>App section</mdb-card-header>
-        <mdb-card-body class="p-3">
-          <mdb-card-title>
-            <h5 class="mb-3">Charts</h5>
-          </mdb-card-title>
-          <mdb-card-text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi blanditiis, assumenda dolorem
-            possimus id qui ut eaque. Similique porro labore commodi impedit deserunt? Officiis nihil rem aut molestias
-            illum eos! Similique accusantium reprehenderit necessitatibus quo totam provident laudantium recusandae
-            sapiente, nemo ex illum nobis, officia, vero dolores! Distinctio similique pariatur, at sint nemo quidem
-            commodi vel rerum aliquid quibusdam? Perferendis.</mdb-card-text>
-          <a routerLink="/charts" mdbBtn color="orange">Go to section</a>
-        </mdb-card-body>
-      </mdb-card>
-    </div>
-
-    <div class="col-md-6">
-      <mdb-card class="animated fadeIn mb-3" borderColor="border-warning">
-        <mdb-card-header>App section</mdb-card-header>
-        <mdb-card-body class="p-3">
-          <mdb-card-title>
-            <h5 class="mb-3">Profile</h5>
-          </mdb-card-title>
-          <mdb-card-text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi blanditiis, assumenda dolorem
-            possimus id qui ut eaque. Similique porro labore commodi impedit deserunt? Officiis nihil rem aut molestias
-            illum eos! Similique accusantium reprehenderit necessitatibus quo totam provident laudantium recusandae
-            sapiente, nemo ex illum nobis, officia, vero dolores! Distinctio similique pariatur, at sint nemo quidem
-            commodi vel rerum aliquid quibusdam? Perferendis.</mdb-card-text>
-          <a routerLink="/profile" mdbBtn color="orange">Go to section</a>
-        </mdb-card-body>
-      </mdb-card>
-    </div>
-
-  </div>
 </div>

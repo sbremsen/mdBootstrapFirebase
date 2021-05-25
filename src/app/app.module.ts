@@ -20,6 +20,9 @@ import { SharedModule } from './shared/shared.module';
 import { AdminModule } from './admin/admin.module';
 import { ModalModule } from 'angular-bootstrap-md';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { ServiceWorkerModule } from '@angular/service-worker';
+// import { EditorModule } from '@tinymce/tinymce-angular';
+// import { MaterialFileInputModule } from 'ngx-material-file-input';
 
 @NgModule({
   declarations: [AppComponent],
@@ -36,6 +39,9 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     AngularFirestoreModule,
     AngularFireDatabaseModule,
     CoreModule,
+    MDBBootstrapModule,
+    // MaterialFileInputModule,
+  //  EditorModule,
     StoreModule.forRoot(reducers, {
       runtimeChecks: {
         strictStateImmutability: true,
@@ -44,7 +50,11 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
       metaReducers
     }),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
-    EffectsModule.forRoot([])
+    EffectsModule.forRoot([]),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+  ],
+  providers: [
+   // { provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js' }
   ],
   bootstrap: [AppComponent]
 })

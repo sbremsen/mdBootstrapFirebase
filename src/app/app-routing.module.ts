@@ -8,10 +8,14 @@ import { MainComponent } from './core/main/main.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 import { AdminComponent } from './admin/containers/admin/admin.component';
 import { AdminGuard } from './admin/guard/admin.guard';
+import { LandingPageComponent } from './core/landing-page/landing-page.component';
+import { VideosComponent } from './core/videos/videos.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, children: [
     { path: '', component: MainComponent},
+    { path: 'landing-page', component: LandingPageComponent, canActivate: [AuthGuard] },
+    { path: 'videos', component: VideosComponent, canActivate: [AuthGuard]},
     { path: 'projects', loadChildren: './projects/projects.module#ProjectsModule', canActivate: [AuthGuard]},
     { path: 'customers', loadChildren: './customers/customers.module#CustomersModule', canActivate: [AuthGuard]},
     { path: 'profile', loadChildren: './profile/profile.module#ProfileModule', canActivate: [AuthGuard] },

@@ -16,6 +16,8 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
   imports: [
@@ -34,7 +36,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MainComponent,
     HomeComponent,
     DashboardComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LandingPageComponent,
+    VideosComponent
   ],
   exports: [
     HeaderComponent,

@@ -20,7 +20,9 @@ export class AppComponent implements OnInit {
   isLoading$: Observable<boolean>;
   isAdmin$: Observable<boolean>;
 
-  constructor(private store: Store<AppState>) {}
+  constructor(private store: Store<AppState>) {
+
+  }
 
   ngOnInit() {
     this.user$ = this.store.select(getUser);
